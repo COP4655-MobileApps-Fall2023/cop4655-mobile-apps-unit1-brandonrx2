@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GUi-J0-Tha">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--About Me!-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MobileAppsHW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RG8-Hh-qhc">
+                                <rect key="frame" x="158" y="361" width="102" height="68"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <gestureRecognizers/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="About Myself"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="8V9-LL-SMP" appends="YES" id="cHW-jg-bYo"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="IMG_3040" translatesAutoresizingMaskIntoConstraints="NO" id="lCi-TQ-KiU">
+                                <rect key="frame" x="76" y="143" width="255" height="193"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="26" translatesAutoresizingMaskIntoConstraints="NO" id="3Vy-Fw-5e8">
+                                <rect key="frame" x="127" y="464.99999999999989" width="152" height="94.666666666666629"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XU1-dv-lqm">
+                                        <rect key="frame" x="0.0" y="0.0" width="152" height="34.333333333333336"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Favorite Hobbies"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="mdn-du-lzd" appends="YES" id="lk9-1Q-B9I"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eJM-UF-nxA">
+                                        <rect key="frame" x="0.0" y="60.333333333333329" width="152" height="34.333333333333329"/>
+                                        <gestureRecognizers/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="College"/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="CDb-aG-8XR" appends="YES" id="ISu-22-v9l"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="About Me!" id="auH-30-cJK"/>
+                    <connections>
+                        <outlet property="FirstButton" destination="RG8-Hh-qhc" id="Rm2-yO-mLn"/>
+                        <outlet property="SecondButton" destination="XU1-dv-lqm" id="dpl-oR-7Nr"/>
+                        <outlet property="ThirdButton" destination="eJM-UF-nxA" id="pQy-lj-Goc"/>
+                        <segue destination="wbv-4T-5e6" kind="show" identifier="detailSegue" id="EXu-r7-Ku8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="8V9-LL-SMP">
+                    <connections>
+                        <action selector="ButtonTapped:" destination="BYZ-38-t0r" id="xbu-jM-Fzg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="mdn-du-lzd">
+                    <connections>
+                        <action selector="ButtonTapped:" destination="BYZ-38-t0r" id="40n-KM-Yvg"/>
+                    </connections>
+                </tapGestureRecognizer>
+                <tapGestureRecognizer id="CDb-aG-8XR">
+                    <connections>
+                        <action selector="ButtonTapped:" destination="BYZ-38-t0r" id="GaM-Lx-qpb"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="936.64122137404581" y="3.5211267605633805"/>
+        </scene>
+        <!--Detail View Controller-->
+        <scene sceneID="4bU-WN-ooO">
+            <objects>
+                <viewController id="wbv-4T-5e6" customClass="DetailViewController" customModule="MobileAppsHW1" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ChP-9l-Y9C">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="iue-P5-oed"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="xa0-sm-csE"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Qf-Sx-Jc2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1724" y="18"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="b9D-vp-wjK">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GUi-J0-Tha" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="veq-6D-1YT">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="ozj-Qe-yl9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="w1N-Rv-i6P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="9.9236641221374047" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="IMG_3040" width="2316" height="2130"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
