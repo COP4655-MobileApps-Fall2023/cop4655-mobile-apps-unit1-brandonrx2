@@ -1,6 +1,14 @@
 # cop4655-mobile-apps-unit1-brandonrx2
 cop4655-mobile-apps-unit1-brandonrx2 created by GitHub Classroom
- Project 1 - MyStory
+ Project 1 - MyStory 
+
+ <div>
+    <a href="https://www.loom.com/share/ba9fab90e6ad4b2ba9f5c16625add0fb">
+    </a>
+    <a href="https://www.loom.com/share/ba9fab90e6ad4b2ba9f5c16625add0fb">
+      <img style="max-width:300px;" src="https://cdn.loom.com/sessions/thumbnails/ba9fab90e6ad4b2ba9f5c16625add0fb-with-play.gif">
+    </a>
+  </div>
 
 Submitted by: Brandon Rojas
 
